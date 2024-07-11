@@ -116,5 +116,5 @@ body {
 }
 
 .app-card-001 .card-btn {
-    @apply mx-auto mt-1 text-white btn btn-primary btn-sm w-fit ring-2 hover:scale-125;
+    @apply mx-auto my-2 text-white btn btn-primary btn-sm w-fit ring-2 hover:scale-125;
 }

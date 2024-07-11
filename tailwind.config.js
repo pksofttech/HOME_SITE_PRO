@@ -29,6 +29,7 @@ module.exports = {
                     error: "#d3434d",
                 },
             },
+            "dark",
             "cupcake",
             "bumblebee",
             "emerald",
