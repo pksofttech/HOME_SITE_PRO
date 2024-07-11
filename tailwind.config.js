@@ -1,9 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    i18n: {
-        locales: ["en-US"],
-        defaultLocale: "en-US",
-    },
     content: ["./**/*.{html,js}"],
     plugins: [
         // include Flowbite as a plugin in your Tailwind CSS project
@@ -11,7 +7,62 @@ module.exports = {
         require("daisyui"),
     ],
     daisyui: {
-        themes: ["dark"],
+        themes: [
+            {
+                defult: {
+                    primary: "#313bc4",
+
+                    secondary: "#00a600",
+
+                    accent: "#5a41ff",
+
+                    neutral: "#1d140d",
+
+                    "base-100": "#ffffffff",
+
+                    info: "#00b4d1",
+
+                    success: "#00f293",
+
+                    warning: "#ff8d00",
+
+                    error: "#d3434d",
+                },
+            },
+            "cupcake",
+            "bumblebee",
+            "emerald",
+            "corporate",
+            "synthwave",
+            "retro",
+            "cyberpunk",
+            "valentine",
+            "halloween",
+            "garden",
+            "forest",
+            "aqua",
+            "lofi",
+            "pastel",
+            "fantasy",
+            "wireframe",
+            "black",
+            "luxury",
+            "dracula",
+            "cmyk",
+            "autumn",
+            "business",
+            "acid",
+            "lemonade",
+            "night",
+            "coffee",
+            "winter",
+            "dim",
+            "nord",
+            "sunset",
+            // "light",
+            // "dark",
+        ], // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
+        // darkTheme: "dark", // name of one of the included themes for dark mode
         base: true, // applies background color and foreground color for root element by default
         styled: true, // include daisyUI colors and design decisions for all components
         utils: true, // adds responsive and modifier utility classes
@@ -19,13 +70,5 @@ module.exports = {
         prefix: "", // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
         logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
         themeRoot: ":root",
-    },
-    theme: {
-        extend: {
-            scale: {
-                175: "1.75",
-                200: "2.00",
-            },
-        },
     },
 };

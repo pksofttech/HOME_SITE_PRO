@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="defult">
 
 <head>
     <meta charset="utf-8" />
@@ -11,6 +11,11 @@
     <link rel="icon" href="/image/logo_pks.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
 
 </head>
@@ -19,7 +24,7 @@
     <!-- MAIN BODY -->
 
     <div class="container relative flex flex-col px-2 pb-16 mx-auto drawer-content">
-        <div class="sticky top-0 z-50 mb-2 overflow-x-scroll navbar bg-base-300 rounded-b-btn ">
+        <div class="sticky top-0 z-50 mb-2 overflow-x-scroll font-bold text-gray-200 navbar bg-primary rounded-b-btn">
             <div class="navbar-start">
                 <div class="flex items-center justify-start gap-2 text-sm ps-4">
                     <div class="avatar">
@@ -32,17 +37,15 @@
                     </div>
                     <p><i class="fa-solid fa-square-phone"></i> 081-1434939</p>
                     <p> <i class="fa-brands fa-line"></i></i> PKSOFTTTECH</p>
-                    <button onclick="line_add_dialog.showModal()" class="text-green-500 ">
+                    <button onclick="line_add_dialog.showModal()" class="">
                         <i class="fa-brands fa-line fa-2x"></i>
                     </button>
-                    <a href="https://www.youtube.com/channel/UC8QUzWR86e1i5E9wJhyxa6A" target="_blank" class="text-red-500">
+                    <a href="https://www.youtube.com/channel/UC8QUzWR86e1i5E9wJhyxa6A" target="_blank" class="">
                         <i class="fa-brands fa-youtube fa-2x"></i>
                     </a>
-                    <a href="https://github.com/pksofttech" target="_blank" class="text-teal-900">
+                    <a href="https://github.com/pksofttech" target="_blank" class="">
                         <i class="fa-brands fa-github fa-2x"></i>
                     </a>
-
-
                 </div>
             </div>
 
@@ -64,12 +67,10 @@
                             <p>ออกแบบและผลิต PCB พร้อมลงอุปกรณ์</p>
                             <p>ประกอบตู้ควบคุม PLC และไมโครคอนโทรลเลอร์</p>
                             <p>ระบบควบคุม iot และควบคุมอาคารต่างๆ</p>
-
                         </div>
-
                         <div class="justify-center -space-x-6 avatar-group">
-                            <div class="avatar">
-                                <div class="w-16">
+                            <div class="avatar ">
+                                <div class="w-16 ">
                                     <img src="/image/hero_img/001.jpg" />
                                 </div>
                             </div>
@@ -102,11 +103,16 @@
 
             <div class="flex flex-row justify-around gap-4 overflow-scroll">
 
-                <div class="shadow-xl card bg-base-100 w-96 min-w-56">
-                    <figure>
-                        <img class="max-h-60" src="/image/demo/app/bas001.png" />
-                    </figure>
-                    <div class="overflow-y-scroll text-sm text-center card-body max-h-60">
+                <div class="app-card-001">
+                    <div class="card-app-img">
+                        <div class=" mask mask-squircle">
+                            <img src="/image/demo/app/bas001.png" />
+                        </div>
+
+                    </div>
+                    <button class="card-btn">ดูสินค้า...</button>
+
+                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
                         <h2 class="card-title">รับสร้างโปรแกรมเฉพาะงาน</h2>
                         <p>
                             ซอฟต์แวร์เฮาส์ (Software House) เป็นบริษัทหรือองค์กรที่เชี่ยวชาญในการพัฒนาซอฟต์แวร์และบริการเทคโนโลยีสารสนเทศ
@@ -118,34 +124,28 @@
                     </div>
                 </div>
 
-                <div class="shadow-xl card bg-base-100 w-96 min-w-56">
-                    <figure>
-                        <img class="max-h-60" src="/image/demo/pcb01.jpg" />
-                    </figure>
-                    <div class="overflow-y-scroll text-sm text-center card-body max-h-60">
+                <div class="app-card-001">
+                    <div class="card-app-img">
+                        <div class=" mask mask-squircle">
+                            <img src="/image/demo/pcb01.jpg" />
+                        </div>
+                    </div>
+                    <button class="card-btn">ดูสินค้า...</button>
+                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
                         <h2 class="card-title">การออกแบบและผลิต PCB พร้อมลงอุปกรณ์</h2>
                         <p>
                             สเปคของวงจรและอุปกรณ์ที่ใช้
                             ขนาดและรูปทรงของ PCB
                             ข้อกำหนดทางไฟฟ้าและอุณหภูมิ
-                        </p>
-                        <p>
                             ใช้ซอฟต์แวร์ออกแบบ KiCad
                             ออกแบบวงจรและเชื่อมต่ออุปกรณ์
                             การออกแบบเลย์เอาต์ (PCB Layout Design):
                             กำหนดการจัดวางอุปกรณ์บน PCB
                             วางแผนเส้นทางการเดินสาย (Routing)
-                        </p>
-                        <p>
-
                             ตรวจสอบการออกแบบทั้งทางไฟฟ้าและทางกายภาพ
                             ใช้เครื่องมือการจำลอง (Simulation) เพื่อตรวจสอบการทำงานของวงจร
-                        </p>
-                        <p>
                             ส่งไฟล์ Gerber และไฟล์การเจาะรู (Drill File) ไปยังโรงงานผลิต PCB
                             เลือกประเภทของวัสดุ เช่น FR4, CEM-1, หรืออื่นๆ
-                        </p>
-                        <p>
                             เตรียมและตรวจสอบอุปกรณ์
                             ใช้เทคนิคการลงอุปกรณ์ เช่น SMD (Surface-Mount Device) หรือ THT (Through-Hole Technology)
                             การบัดกรีและตรวจสอบความถูกต้องของการลงอุปกรณ์
@@ -154,29 +154,24 @@
                     </div>
                 </div>
 
-                <div class="shadow-xl card bg-base-100 w-96 min-w-56">
-                    <figure>
-                        <img class="max-h-60" src="/image/demo/PLC01.jpg" />
-                    </figure>
-                    <div class="overflow-y-scroll text-sm text-center card-body max-h-60">
+                <div class="app-card-001">
+                    <div class="card-app-img">
+                        <div class=" mask mask-squircle">
+                            <img src="/image/demo/PLC01.jpg" />
+                        </div>
+                    </div>
+                    <button class="card-btn">ดูสินค้า...</button>
+                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
                         <h2 class="card-title">การประกอบตู้ควบคุม PLC และไมโครคอนโทรลเลอร์</h2>
                         <p>
                             ออกแบบตู้ควบคุมและการจัดวางอุปกรณ์ภายในตู้
                             วางแผนการเดินสายไฟและการเชื่อมต่ออุปกรณ์
-                        </p>
-                        <p>
                             เลือก PLC และไมโครคอนโทรลเลอร์ที่เหมาะสม
                             ติดตั้งอุปกรณ์ในตู้ควบคุม เช่น เบรกเกอร์, รีเลย์, สวิตช์, และจอแสดงผล
-                        </p>
-                        <p>
                             ตรวจสอบการออกแบบทั้งทางไฟฟ้าและทางกายภาพ
                             ใช้เครื่องมือการจำลอง (Simulation) เพื่อตรวจสอบการทำงานของวงจร
-                        </p>
-                        <p>
                             เดินสายไฟและเชื่อมต่ออุปกรณ์ตามแผนการออกแบบ
                             ตรวจสอบความถูกต้องของการเชื่อมต่อและความปลอดภัยของการเดินสายไฟ
-                        </p>
-                        <p>
                             ทดสอบการทำงานของระบบและการเชื่อมต่อ
                             ตรวจสอบความปลอดภัยและความทนทานของตู้ควบคุม
                         </p>
@@ -184,29 +179,24 @@
                     </div>
                 </div>
 
-                <div class="shadow-xl card bg-base-100 w-96 min-w-56">
-                    <figure>
-                        <img class="max-h-60" src="/image/demo/iot01.jpg" />
-                    </figure>
-                    <div class="overflow-y-scroll text-sm text-center card-body max-h-60">
+                <div class="app-card-001">
+                    <div class="card-app-img">
+                        <div class=" mask mask-squircle">
+                            <img src="/image/demo/iot01.jpg" />
+                        </div>
+                    </div>
+                    <button class="card-btn">ดูสินค้า...</button>
+                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
                         <h2 class="card-title">ระบบควบคุม IoT และควบคุมอาคาร</h2>
                         <p>
                             กำหนดฟังก์ชันการทำงานและอุปกรณ์ที่ต้องใช้
                             ออกแบบโครงสร้างระบบและการเชื่อมต่ออุปกรณ์
-                        </p>
-                        <p>
                             เลือกแพลตฟอร์ม IoT เช่น Arduino, Raspberry Pi, หรือ ESP8266
                             เลือกอุปกรณ์เซนเซอร์
-                        </p>
-                        <p>
                             เขียนโปรแกรมควบคุมและการสื่อสารระหว่างอุปกรณ์
                             พัฒนาแอปพลิเคชันหรือเว็บแอปสำหรับการควบคุมและการมอนิเตอร์
-                        </p>
-                        <p>
                             ติดตั้งอุปกรณ์และเชื่อมต่อกับระบบเครือข่าย
                             ทดสอบการทำงานของระบบและปรับแต่งให้เหมาะสม
-                        </p>
-                        <p>
                             ตรวจสอบและบำรุงรักษาระบบเป็นระยะ
                             อัปเกรดซอฟต์แวร์และฮาร์ดแวร์ตามความต้องการ
                         </p>

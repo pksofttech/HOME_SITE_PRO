@@ -24,22 +24,6 @@ select:-webkit-autofill:focus {
 
 /* ***************************************** */
 
-select option:checked {
-    @apply text-primary;
-    &::after {
-        content: "✅";
-        @apply float-right;
-    }
-}
-/* option:focus, */
-option:active {
-    @apply bg-info;
-}
-
-select option {
-    @apply bg-base-100;
-}
-
 /* ***************************************** */
 
 ::-webkit-scrollbar {
@@ -80,6 +64,11 @@ body {
     animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    @apply text-gray-600;
 }
 
 @keyframes fadeInAnimation {
@@ -114,164 +103,18 @@ body {
     @apply p-2 min-h-96 w-full bg-base-300 rounded-box flex flex-col gap-2;
 }
 
-/* over load css */
-.btn_block {
-    @apply rounded-btn border hover:ring-4;
+.app-card-001 {
+    @apply card w-96 min-w-56;
 }
 
-.input {
-    @apply ring-2 !important;
+.app-card-001 .card-app-img {
+    @apply mx-auto avatar w-40 hover:scale-150 ease-in-out duration-500;
 }
 
-.input_lable {
-    @apply text-sm text-success;
+.app-card-001 .card-title {
+    @apply text-primary;
 }
 
-.input_content {
-    appearance: none;
-    @apply overflow-hidden grow text-ellipsis;
-}
-
-.input_group_label {
-    @apply flex items-center gap-4 px-4 py-2 rounded-btn text-primary ring-2;
-}
-
-.is-invalid {
-    @apply ring-2 ring-error;
-}
-.select {
-    @apply ring-2 !important;
-}
-
-.input_box {
-    @apply px-2 py-2 rounded-btn bg-base-200;
-}
-
-.badge-primary {
-    @apply text-xs font-medium  px-2.5 py-0.5 w-fit rounded  bg-primary;
-}
-
-.badge-secondary {
-    @apply text-xs font-medium  px-2.5 py-0.5 w-fit rounded  bg-secondary;
-}
-
-.badge-info {
-    @apply text-xs font-medium  px-2.5 py-0.5 w-fit rounded  bg-info;
-}
-
-.badge-success {
-    @apply text-xs font-medium  px-2.5 py-0.5 w-fit rounded  bg-success;
-}
-
-.badge-warning {
-    @apply text-xs font-medium  px-2.5 py-0.5 w-fit rounded  bg-warning;
-}
-
-.badge-error {
-    @apply text-xs font-medium  px-2.5 py-0.5 w-fit rounded  bg-error;
-}
-
-.modal-dialog {
-    @apply relative p-4 border rounded-lg shadow bg-base-300 border-primary;
-}
-
-.info-box .info-box-icon {
-    border-radius: 0.25rem;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1.875rem;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-    width: 70px;
-}
-
-.info-box .info-box-content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    line-height: 1.8;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0 10px;
-    overflow: hidden;
-}
-
-.info-box .info-box-number {
-    display: block;
-    margin-top: 0.25rem;
-    font-weight: 700;
-}
-
-.small-box {
-    border-radius: 0.25rem;
-    box-shadow:
-        0 0 1px rgba(0, 0, 0, 0.125),
-        0 1px 3px rgba(0, 0, 0, 0.2);
-    display: block;
-    position: relative;
-
-    @apply min-w-52;
-}
-
-.small-box > .inner {
-    padding: 10px;
-}
-
-.small-box h3 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin: 0 0 10px;
-    padding: 0;
-    white-space: nowrap;
-}
-
-.small-box > .small-box-footer {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgba(255, 255, 255, 0.8);
-    display: block;
-    padding: 3px 0;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    z-index: 10;
-}
-
-.small-box > .small-box-footer:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: #fff;
-}
-
-.small-box .icon {
-    color: rgba(0, 0, 0, 0.15);
-    z-index: 0;
-}
-
-.small-box .icon > i {
-    font-size: 90px;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    transition: -webkit-transform 0.3s linear;
-    transition: transform 0.3s linear;
-    transition:
-        transform 0.3s linear,
-        -webkit-transform 0.3s linear;
-}
-
-.small-box:hover .icon > i,
-.small-box:hover .icon > i.fa,
-.small-box:hover .icon > i.fas,
-.small-box:hover .icon > i.far,
-.small-box:hover .icon > i.fab,
-.small-box:hover .icon > i.fal,
-.small-box:hover .icon > i.fad,
-.small-box:hover .icon > i.ion {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.app-card-001 .card-btn {
+    @apply mx-auto mt-1 text-white btn btn-primary btn-sm w-fit ring-2 hover:scale-125;
 }
