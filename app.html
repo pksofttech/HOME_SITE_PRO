@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> -->
+    <!-- <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+    <title>PKS PAY-BOX</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ffffff%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2290%22>🛠️</text></svg>" />
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+
+<body class="bg-base-100">
+
+    <div class="container relative flex flex-col px-2 mx-auto ">
+        <div class="sticky top-0 z-50 w-full mb-2 navbar bg-base-300 rounded-b-btn">
+            <div class="navbar-start">
+                <div class="flex items-center justify-start gap-1 ps-4">
+                    <div class="avatar">
+                        <div class="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="px-4 text-lg font-bold text-primary">
+                        PKS PAY-BOX-28T03
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="gap-1 navbar-end">
+
+                <button class=" btn btn-ghost" onclick="window.location.reload();">
+                    <kbd class="kbd kbd-sm">Reload</kbd>
+                </button>
+
+                <div class="dropdown dropdown-bottom dropdown-end">
+                    <button tabindex="0" class="btn btn-circle">
+                        <div class="avatar">
+                            <div class="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box">
+                        <div class="px-1 stat">
+                            <div class="stat-figure text-secondary">
+                                <div class="avatar online">
+                                    <kbd class="kbd kbd-sm">Admin</kbd>
+                                </div>
+                                <div class="mt-8 stat-desc text-secondary">
+                                    <a class="link" role="button" onclick="logout();"><kbd class="kbd kbd-sm">ออกจากระบบ</kbd> </a>
+                                </div>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-screen content_box">
+            <div class="container-fluid">
+                <div class="card-body">
+                    <div class="flex flex-col card-title">
+                        <div class="text-6xl text-center">🅿️</div>
+                        <div class="text-2xl text-center">QR-BOX-T28[Stripe]</div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 p-8 bg-base-200 rounded-btn">
+                        <p class="text-lg text-primary">ตั้งค่า PAY AMOUNT(ราคา PAY-TYPE)</p>
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">DEVICE-NAME</kbd>
+                            </div>
+                            <input type="text" placeholder="Device Name" class="w-full input input-bordered" id="device_name" value="" />
+                        </label>
+
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">PAY-CODE-01[RELAY01]</kbd>
+                            </div>
+                            <input type="text" placeholder="ราคา:ข้อความ@:เวลาเปิด" class="w-full input input-bordered" id="qr_code_01" value="" />
+                        </label>
+
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">PAY-CODE-02[RELAY02]</kbd>
+                            </div>
+                            <input type="text" placeholder="ราคา:ข้อความ@:เวลาเปิด" class="w-full input input-bordered" id="qr_code_02" value="" />
+                        </label>
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">PAY-CODE-03[RELAY03]</kbd>
+                            </div>
+                            <input type="text" placeholder="ราคา:ข้อความ@:เวลาเปิด" class="w-full input input-bordered" id="qr_code_03" value="" />
+                        </label>
+
+                        <button type="submit" class="mx-auto btn btn-success btn-outline" onclick="save_qr_code();">Save (บันทึก)</button>
+                    </div>
+
+                    <div class="flex flex-col gap-2 p-8 bg-base-200 rounded-btn">
+                        <p class="text-lg text-primary">ตั้งค่า WIFI</p>
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">SSID</kbd>
+                            </div>
+                            <input type="text" placeholder="ssid" class="w-full input input-bordered" id="ssid" value="{{ssid}}" />
+                        </label>
+
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">Password</kbd>
+                            </div>
+                            <input type="text" placeholder="ssid password" class="w-full input input-bordered" id="ssid_password" value="{{ssid_password}}" />
+                        </label>
+                        <button type="submit" class="mx-auto btn btn-success btn-outline" onclick="save_ssid();">Save (บันทึก)</button>
+                    </div>
+
+                    <div class="flex flex-col gap-2 p-8 bg-base-200 rounded-btn">
+                        <p class="text-lg text-primary">ตั้งค่า SERVER QR-BOX</p>
+
+                        <label class="w-full form-control text-error">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">Home Server</kbd>
+                            </div>
+                            <input type="text" placeholder="Home Server" class="w-full input input-bordered" id="server" value="{{server}}" />
+                        </label>
+                        <label class="w-full form-control text-error">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">QR-PAYMENT NAME</kbd>
+                            </div>
+                            <input type="text" placeholder="Home Server" class="w-full input input-bordered" id="qr_sn" value="{{qr_sn}}" />
+                        </label>
+                        <label class="w-full form-control text-error">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">line token notify</kbd>
+                            </div>
+                            <input type="text" placeholder="line token notify" class="w-full input input-bordered" id="line_token" value="{{line_token}}" />
+                        </label>
+                        <button class="mx-auto btn btn-error btn-outline" onclick="save_server();">Save (บันทึก)</button>
+
+                        <label class="w-full form-control text-error">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">Stripe Api Key</kbd>
+                            </div>
+                            <input type="text" placeholder="Stripe Api Key" class="w-full input input-bordered" id="api_key" value="{{api_key}}" />
+                        </label>
+                        <label class="w-full form-control text-error">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">billing email</kbd>
+                            </div>
+                            <input type="email" placeholder="billing email" class="w-full input input-bordered" id="billing_email" value="{{billing_email}}" />
+                        </label>
+
+                        <button class="mx-auto btn btn-error btn-outline" onclick="save_api_key();">Save (บันทึก)</button>
+                    </div>
+                    <hr>
+
+                    <div class="flex flex-col gap-2 p-8 bg-base-200 rounded-btn">
+                        <p class="text-lg text-primary">ตั้งค่า AP Setting SSID</p>
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">SSID Name</kbd>
+                            </div>
+                            <input type="text" placeholder="ssid" class="w-full input input-bordered" id="ssid_ap_name" value="{{ssid_ap_name}}" />
+                        </label>
+
+                        <label class="w-full form-control text-primary">
+                            <div class="label">
+                                <kbd class="kbd kbd-sm">SSID Password</kbd>
+                            </div>
+                            <input type="text" placeholder="ssid password" class="w-full input input-bordered" id="ssid_ap_pass" value="{{ssid_ap_pass}}" />
+                        </label>
+                        <button type="submit" class="mx-auto btn btn-success btn-outline" onclick="save_ap_ssid();">Save (บันทึก)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-10 mt-8 rounded footer footer-center bg-base-100 text-base-content">
+        <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <aside>
+            <p>Copyright © ${new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+
+    <div class="z-50 hidden mt-8 toast toast-top toast-center" id="toast_box_div">
+        <div class="alert alert-success animate-bounce">
+            <kbd class="kbd text-error">⌘</kbd>
+            <span id="msg_box_text">Message sent successfully.</span>
+        </div>
+    </div>
+
+    <script>
+        const toast_box_div = document.getElementById("toast_box_div");
+        const msg_box_text = document.getElementById("msg_box_text");
+
+        function logout() {
+            fetch('/reset', {
+            }).then(() => {
+                alert('You have been logged out. Please Close Setting mode');
+                window.close();
+            });
+        }
+
+        async function save_ssid() {
+            let jsonData = {
+                ssid: document.getElementById('ssid').value,
+                ssid_password: document.getElementById('ssid_password').value,
+            };
+
+            try {
+                let response = await fetch('/submit_config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                let responseData = await response.json();
+                console.log('Response from server:', responseData);
+                show_toast_box("successfully");
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        async function save_ap_ssid() {
+            let jsonData = {
+                ssid_ap_name: document.getElementById('ssid_ap_name').value,
+                ssid_ap_pass: document.getElementById('ssid_ap_pass').value,
+            };
+
+            try {
+                let response = await fetch('/submit_config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                let responseData = await response.json();
+                console.log('Response from server:', responseData);
+                show_toast_box("successfully");
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        async function save_server() {
+            let jsonData = {
+                qr_sn: document.getElementById('qr_sn').value,
+                server: document.getElementById('server').value,
+                line_token: document.getElementById('line_token').value,
+            };
+
+            try {
+                let response = await fetch('/submit_config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                let responseData = await response.json();
+                console.log('Response from server:', responseData);
+                show_toast_box("successfully");
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        async function save_api_key() {
+            let jsonData = {
+                api_key: document.getElementById('api_key').value,
+                billing_email: document.getElementById('billing_email').value,
+            };
+
+            try {
+                let response = await fetch('/submit_config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                let responseData = await response.json();
+                console.log('Response from server:', responseData);
+                show_toast_box("successfully");
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        async function save_qr_code() {
+            let jsonData = {
+                device_name: document.getElementById('device_name').value,
+                qr_code_01: document.getElementById('qr_code_01').value,
+                qr_code_02: document.getElementById('qr_code_02').value,
+                qr_code_03: document.getElementById('qr_code_03').value,
+            };
+
+            try {
+                let response = await fetch('/submit_config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                let responseData = await response.json();
+                console.log('Response from server:', responseData);
+                show_toast_box("successfully");
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+
+        function hide_toast_box() {
+            toast_box_div.classList.add("hidden");
+        }
+        function show_toast_box(msg = "info", time_out = 3000) {
+            toast_box_div.classList.remove("hidden");
+            msg_box_text.innerHTML = msg;
+            setTimeout(hide_toast_box, time_out);
+        }
+
+        //show_toast_box("QR-PAYMENT-BOX");
+        async function get_config() {
+            try {
+                let response = await fetch('/get_config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                let responseData = await response.json();
+                //console.log('Response from server:', responseData);
+                Object.keys(responseData).forEach(function (key) {
+                    console.log(key, responseData[key]);
+
+                    const e = document.getElementById(key);
+                    if (e) {
+                        e.value = responseData[key];
+                    }
+
+                });
+                show_toast_box("successfully");
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+        get_config();
+
+    </script>
+</body>
+
+</html>
