@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/style.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+
 </head>
 
 <body class="bg-base-100">
@@ -209,7 +210,7 @@
             </div>
         </section>
 
-        <section class="">
+        <section id="section_image_view" class="">
             <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div class="text-sm font-light">
                     <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">ตัวอย่างงานออกแบบผลิต PCB</h2>
@@ -352,6 +353,58 @@
                 <div class="grid grid-cols-2 gap-4 mt-8">
                     <img class="w-full rounded-lg" src="/image/CVMS/iPhone-13-PRO-localhost (2).png">
                     <img class="w-full mt-4 rounded-lg lg:mt-10" src="/image/CVMS/iPhone-13-PRO-localhost (3).png">
+                </div>
+            </div>
+
+            <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                <div class="text-sm font-light">
+                    <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">ตัวอย่างงานระบบจัดการลานจอด(Parking System)</h2>
+                    <p class="mb-4">เราให้บริการระบบจัดการลานจอด (Parking System) เป็นระบบที่ออกแบบมาเพื่อบริหารและจัดการพื้นที่จอดรถในสถานที่ต่าง ๆ เช่น ห้างสรรพสินค้า,
+                        อาคารสำนักงาน, โรงพยาบาล,
+                        หรือที่อยู่อาศัย ระบบนี้ช่วยเพิ่มประสิทธิภาพในการจัดการพื้นที่จอดรถ ลดปัญหาการหาที่จอดรถ และเพิ่มความสะดวกสบายให้กับผู้ใช้บริการ</p>
+                    <div class="-space-x-6 avatar-group rtl:space-x-reverse">
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org.png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (1).png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (2).png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (3).png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (4).png" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (5).png" />
+                            </div>
+                        </div>
+                        <div class="avatar placeholder">
+                            <div class="w-16">
+                                <img src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (6).png" />
+                            </div>
+                        </div>
+                    </div>
+                    <a class="text-lg link">ดูข้อมูลเพื่ม...</a>
+
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <img class="w-full rounded-lg" src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (6).png">
+                    <img class="w-full mt-4 rounded-lg lg:mt-10" src="/image/LPRS/Macbook-Air-lpr.pksofttech.org (5).png">
                 </div>
             </div>
         </section>
@@ -629,6 +682,17 @@
 
     </dialog>
 
+    <dialog id="preview_image" class="modal">
+        <div class="p-4">
+            <form method="dialog">
+                <button class="absolute btn btn-sm btn-circle btn-error right-4 top-4 ">✕</button>
+            </form>
+            <figure class="p-4 "><img id="preview_image_view" class="" src="/image/75821.jpg" alt="PKSOFTTECH" /></figure>
+
+        </div>
+
+    </dialog>
+
 
     <script>
         const debug = console.log;
@@ -638,6 +702,31 @@
             let scrollPosition = (content.scrollWidth - container.clientWidth) / 2;
             container.scrollLeft = scrollPosition;
         };
+    </script>
+
+    <script>
+        function getParentDivClass(image) {
+            // Get the parent div of the image
+            const parentDiv = image.closest('div');
+            // Return the class name(s) of the parent div
+            return parentDiv.className;
+        }
+        //const container = document.querySelector('#section_image_view');
+        //const images = container.querySelectorAll('img');
+        const images = document.querySelectorAll('img');
+
+        images.forEach(image => {
+            //const parentDivClass = getParentDivClass(image);
+            //if (parentDivClass == "w-16") {
+            //    console.log('Parent Div Class:', parentDivClass);
+            //}
+            image.addEventListener('click', () => {
+                document.getElementById("preview_image_view").src = image.src;
+                preview_image.showModal();
+            });
+
+        });
+
     </script>
 </body>
 
