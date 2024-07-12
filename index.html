@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="dark">
+<html data-theme="nord">
 
 <head>
     <meta charset="utf-8" />
@@ -16,109 +16,98 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 
-<body class=" bg-base">
-    <!-- MAIN BODY -->
-
-    <div class="container relative flex flex-col mx-auto drawer-content">
-        <div class="sticky top-0 z-50 mb-2 overflow-x-scroll font-bold text-gray-200 navbar bg-primary rounded-b-btn">
-            <div class="navbar-start">
-                <div class="flex items-center justify-start gap-2 text-sm ps-4">
-                    <div class="avatar">
-                        <div class="w-10 mask mask-squircle">
-                            <img src="/image/logo_pks.png" />
-                        </div>
+<body class="bg-base-100">
+    <!-- NAV BAR -->
+    <div class="sticky top-0 z-50 overflow-x-scroll font-bold text-gray-200 navbar bg-primary ">
+        <div class="navbar-start">
+            <div class="flex items-center justify-start gap-2 text-sm ps-4">
+                <div class="avatar">
+                    <div class="w-10 mask mask-squircle">
+                        <img src="/image/logo_pks.png" />
                     </div>
-                    <div class="hidden px-4 text-lg font-bold text-primary lg:block">
-                        PKSOFTTECH.ORG
-                    </div>
-                    <p><i class="fa-solid fa-square-phone"></i> 081-1434939</p>
-                    <p> <i class="fa-brands fa-line"></i></i> PKSOFTTTECH</p>
-                    <button onclick="line_add_dialog.showModal()" class="">
-                        <i class="fa-brands fa-line fa-2x"></i>
-                    </button>
-                    <a href="https://www.youtube.com/channel/UC8QUzWR86e1i5E9wJhyxa6A" target="_blank" class="">
-                        <i class="fa-brands fa-youtube fa-2x"></i>
-                    </a>
-                    <a href="https://github.com/pksofttech" target="_blank" class="">
-                        <i class="fa-brands fa-github fa-2x"></i>
-                    </a>
                 </div>
+                <div class="hidden px-4 text-lg font-bold sm:block">
+                    PKSOFTTECH.ORG
+                </div>
+                <p><i class="fa-solid fa-square-phone"></i> 081-1434939</p>
+                <p> <i class="fa-brands fa-line"></i></i> PKSOFTTTECH</p>
+                <button onclick="line_add_dialog.showModal()" class="">
+                    <i class="fa-brands fa-line fa-2x"></i>
+                </button>
+                <a href="https://www.youtube.com/channel/UC8QUzWR86e1i5E9wJhyxa6A" target="_blank" class="">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+                <a href="https://github.com/pksofttech" target="_blank" class="">
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </a>
             </div>
-
         </div>
-        <!-- Page content here -->
-        <div class="content_box">
-            <div class="hero rounded-box" style="background-image: url(/image/background.jpg);">
-                <div class="hero-overlay bg-opacity-80 rounded-box"></div>
-                <div class="text-center hero-content text-neutral-content rounded-box">
-                    <div class="max-w-md">
-                        <div class="avatar">
-                            <div class="w-16 rounded-full ring ring-accent ring-offset-base ring-offset-2">
-                                <img src="/image/logo_pks.png" />
-                            </div>
+    </div>
+    <div class="hero rounded-b-btn" style="background-image: url(/image/background.jpg);">
+        <div class="hero-overlay bg-opacity-80 "></div>
+        <div class="text-center hero-content text-neutral-content ">
+            <div class="max-w-md">
+                <div class="avatar">
+                    <div class="w-16 rounded-full ring ring-accent ring-offset-base ring-offset-2">
+                        <img src="/image/logo_pks.png" />
+                    </div>
+                </div>
+                <h1 class="text-3xl font-bold">PKSOFTTECH.ORG</h1>
+                <div class="flex flex-col">
+                    <p>รับสร้างโปรแกรมเฉพาะงาน</p>
+                    <p>ออกแบบและผลิต PCB พร้อมลงอุปกรณ์</p>
+                    <p>ประกอบตู้ควบคุม PLC และไมโครคอนโทรลเลอร์</p>
+                    <p>ระบบควบคุม iot และควบคุมอาคารต่างๆ</p>
+                </div>
+                <div class="justify-center -space-x-6 avatar-group">
+                    <div class="avatar ">
+                        <div class="w-16 ">
+                            <img src="/image/hero_img/001.jpg" />
                         </div>
-                        <h1 class="text-3xl font-bold">PKSOFTTECH.ORG</h1>
-                        <div class="flex flex-col">
-                            <p>รับสร้างโปรแกรมเฉพาะงาน</p>
-                            <p>ออกแบบและผลิต PCB พร้อมลงอุปกรณ์</p>
-                            <p>ประกอบตู้ควบคุม PLC และไมโครคอนโทรลเลอร์</p>
-                            <p>ระบบควบคุม iot และควบคุมอาคารต่างๆ</p>
+                    </div>
+                    <div class="avatar">
+                        <div class="w-16">
+                            <img src="/image/hero_img/002.jpg" />
                         </div>
-                        <div class="justify-center -space-x-6 avatar-group">
-                            <div class="avatar ">
-                                <div class="w-16 ">
-                                    <img src="/image/hero_img/001.jpg" />
-                                </div>
-                            </div>
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/hero_img/002.jpg" />
-                                </div>
-                            </div>
+                    </div>
 
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/hero_img/003.jpg" />
-                                </div>
-                            </div>
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/hero_img/004.jpg" />
-                                </div>
-                            </div>
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/hero_img/005.jpg" />
-                                </div>
-                            </div>
+                    <div class="avatar">
+                        <div class="w-16">
+                            <img src="/image/hero_img/003.jpg" />
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="w-16">
+                            <img src="/image/hero_img/004.jpg" />
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="w-16">
+                            <img src="/image/hero_img/005.jpg" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="divider divider-secondary"><kbd class="font-bold kbd kbd-lg text-error">PKS</kbd></div>
-            <div class="flex flex-row justify-around gap-4 overflow-scroll">
-
+        </div>
+    </div>
+    <!-- Page content here -->
+    <div class="content_box">
+        <div class="divider divider-secondary"><kbd class="font-bold kbd kbd-lg text-error">PKS</kbd></div>
+        <section id="view_items_section" class="overflow-scroll">
+            <div class="flex flex-row justify-around gap-4 ">
                 <div class="app-card-001">
                     <div class="card-app-img">
                         <div class=" mask mask-squircle">
                             <img src="/image/demo/app/bas001.png" />
                         </div>
-
                     </div>
                     <button class="card-btn">ดูสินค้า...</button>
-
-                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
+                    <div class="overflow-y-scroll text-sm text-center card-body ">
                         <h2 class="card-title">รับสร้างโปรแกรมเฉพาะงาน</h2>
-                        <p>
-                            ซอฟต์แวร์เฮาส์ (Software House) เป็นบริษัทหรือองค์กรที่เชี่ยวชาญในการพัฒนาซอฟต์แวร์และบริการเทคโนโลยีสารสนเทศ
-                            ซอฟต์แวร์เฮาส์ทำงานกับลูกค้าเพื่อสร้างและจัดส่งซอฟต์แวร์ที่ตรงตามความต้องการของลูกค้า
-                            ซอฟต์แวร์เฮาส์มักจะมีทีมนักพัฒนาซอฟต์แวร์ที่มีความเชี่ยวชาญในการเขียนโปรแกรมและออกแบบซอฟต์แวร์
-                            และสามารถให้คำแนะนำและบริการที่เกี่ยวข้องกับซอฟต์แวร์ต่าง ๆ รวมถึงการบริการด้านออกแบบและอิเล็กทรอนิกส์อื่น ๆ
-                        </p>
-
                     </div>
                 </div>
 
@@ -129,26 +118,8 @@
                         </div>
                     </div>
                     <button class="card-btn">ดูสินค้า...</button>
-                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
+                    <div class="overflow-y-scroll text-sm text-center card-body ">
                         <h2 class="card-title">การออกแบบและผลิต PCB พร้อมลงอุปกรณ์</h2>
-                        <p>
-                            สเปคของวงจรและอุปกรณ์ที่ใช้
-                            ขนาดและรูปทรงของ PCB
-                            ข้อกำหนดทางไฟฟ้าและอุณหภูมิ
-                            ใช้ซอฟต์แวร์ออกแบบ KiCad
-                            ออกแบบวงจรและเชื่อมต่ออุปกรณ์
-                            การออกแบบเลย์เอาต์ (PCB Layout Design):
-                            กำหนดการจัดวางอุปกรณ์บน PCB
-                            วางแผนเส้นทางการเดินสาย (Routing)
-                            ตรวจสอบการออกแบบทั้งทางไฟฟ้าและทางกายภาพ
-                            ใช้เครื่องมือการจำลอง (Simulation) เพื่อตรวจสอบการทำงานของวงจร
-                            ส่งไฟล์ Gerber และไฟล์การเจาะรู (Drill File) ไปยังโรงงานผลิต PCB
-                            เลือกประเภทของวัสดุ เช่น FR4, CEM-1, หรืออื่นๆ
-                            เตรียมและตรวจสอบอุปกรณ์
-                            ใช้เทคนิคการลงอุปกรณ์ เช่น SMD (Surface-Mount Device) หรือ THT (Through-Hole Technology)
-                            การบัดกรีและตรวจสอบความถูกต้องของการลงอุปกรณ์
-                        </p>
-
                     </div>
                 </div>
 
@@ -159,21 +130,8 @@
                         </div>
                     </div>
                     <button class="card-btn">ดูสินค้า...</button>
-                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
+                    <div class="overflow-y-scroll text-sm text-center card-body ">
                         <h2 class="card-title">การประกอบตู้ควบคุม PLC และไมโครคอนโทรลเลอร์</h2>
-                        <p>
-                            ออกแบบตู้ควบคุมและการจัดวางอุปกรณ์ภายในตู้
-                            วางแผนการเดินสายไฟและการเชื่อมต่ออุปกรณ์
-                            เลือก PLC และไมโครคอนโทรลเลอร์ที่เหมาะสม
-                            ติดตั้งอุปกรณ์ในตู้ควบคุม เช่น เบรกเกอร์, รีเลย์, สวิตช์, และจอแสดงผล
-                            ตรวจสอบการออกแบบทั้งทางไฟฟ้าและทางกายภาพ
-                            ใช้เครื่องมือการจำลอง (Simulation) เพื่อตรวจสอบการทำงานของวงจร
-                            เดินสายไฟและเชื่อมต่ออุปกรณ์ตามแผนการออกแบบ
-                            ตรวจสอบความถูกต้องของการเชื่อมต่อและความปลอดภัยของการเดินสายไฟ
-                            ทดสอบการทำงานของระบบและการเชื่อมต่อ
-                            ตรวจสอบความปลอดภัยและความทนทานของตู้ควบคุม
-                        </p>
-
                     </div>
                 </div>
 
@@ -184,115 +142,179 @@
                         </div>
                     </div>
                     <button class="card-btn">ดูสินค้า...</button>
-                    <div class="overflow-y-scroll text-sm text-center card-body h-60">
+                    <div class="overflow-y-scroll text-sm text-center card-body ">
                         <h2 class="card-title">ระบบควบคุม IoT และควบคุมอาคาร</h2>
-                        <p>
-                            กำหนดฟังก์ชันการทำงานและอุปกรณ์ที่ต้องใช้
-                            ออกแบบโครงสร้างระบบและการเชื่อมต่ออุปกรณ์
-                            เลือกแพลตฟอร์ม IoT เช่น Arduino, Raspberry Pi, หรือ ESP8266
-                            เลือกอุปกรณ์เซนเซอร์
-                            เขียนโปรแกรมควบคุมและการสื่อสารระหว่างอุปกรณ์
-                            พัฒนาแอปพลิเคชันหรือเว็บแอปสำหรับการควบคุมและการมอนิเตอร์
-                            ติดตั้งอุปกรณ์และเชื่อมต่อกับระบบเครือข่าย
-                            ทดสอบการทำงานของระบบและปรับแต่งให้เหมาะสม
-                            ตรวจสอบและบำรุงรักษาระบบเป็นระยะ
-                            อัปเกรดซอฟต์แวร์และฮาร์ดแวร์ตามความต้องการ
-                        </p>
+
                     </div>
                 </div>
-
             </div>
 
-            <section class="">
-                <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
-                    <div class="max-w-screen-md mb-8 lg:mb-16">
-                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">Application Service (บริการแอพลิเคชั่น)</h2>
-                        <p class=" sm:text-xl">ให้บริการแอปพลิเคชันระบบบริหารจัดการ VMS POS Parking Dev-SCADA ระบบ iot ระบบเก็บข้อมูล(Power meter senser...) แบบ On line และ
-                            standalone</p>
+
+        </section>
+
+        <section class="">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
+                <div class="max-w-screen-md mb-8 lg:mb-16">
+                    <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">Application Service (บริการแอพลิเคชั่น)</h2>
+                    <p class=" sm:text-xl">ให้บริการแอปพลิเคชันระบบบริหารจัดการ VMS POS Parking Dev-SCADA ระบบ iot ระบบเก็บข้อมูล(Power meter senser...) แบบ On line และ
+                        standalone</p>
+                </div>
+                <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary ">
+                            <i class="fa-regular fa-address-card fa-2x"></i>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold ">VMS System</h3>
+                        <p class="">...</p>
                     </div>
-                    <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                        <div>
-                            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-primary lg:h-12 lg:w-12 ">
-                                <i class="fa-regular fa-address-card fa-2x"></i>
-                            </div>
-                            <h3 class="mb-2 text-xl font-bold ">VMS System</h3>
-                            <p class="">...</p>
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary ">
+                            <i class="fa-solid fa-cart-arrow-down fa-2x"></i>
                         </div>
-                        <div>
-                            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-primary lg:h-12 lg:w-12 ">
-                                <i class="fa-solid fa-cart-arrow-down fa-2x"></i>
-                            </div>
-                            <h3 class="mb-2 text-xl font-bold ">POS System</h3>
-                            <p class="">...</p>
+                        <h3 class="mb-2 text-xl font-bold ">POS System</h3>
+                        <p class="">...</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary ">
+                            <i class="fa-solid fa-square-parking fa-2x"></i>
                         </div>
-                        <div>
-                            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-primary lg:h-12 lg:w-12 ">
-                                <i class="fa-solid fa-square-parking fa-2x"></i>
-                            </div>
-                            <h3 class="mb-2 text-xl font-bold ">Parking Automation</h3>
-                            <p class="">...</p>
+                        <h3 class="mb-2 text-xl font-bold ">Parking Automation</h3>
+                        <p class="">...</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary ">
+                            <i class="fa-solid fa-qrcode fa-2x"></i>
                         </div>
-                        <div>
-                            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-primary lg:h-12 lg:w-12 ">
-                                <i class="fa-solid fa-qrcode fa-2x"></i>
-                            </div>
-                            <h3 class="mb-2 text-xl font-bold ">Payment Service</h3>
-                            <p class="">...</p>
+                        <h3 class="mb-2 text-xl font-bold ">Payment Service</h3>
+                        <p class="">...</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary ">
+                            <i class="fa-solid fa-server fa-2x "></i>
                         </div>
-                        <div>
-                            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-primary lg:h-12 lg:w-12 ">
-                                <i class="fa-solid fa-server fa-2x "></i>
-                            </div>
-                            <h3 class="mb-2 text-xl font-bold ">Data Log</h3>
-                            <p class="">...</p>
+                        <h3 class="mb-2 text-xl font-bold ">Data Log</h3>
+                        <p class="">...</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary ">
+                            <i class="fa-solid fa-person-circle-check fa-2x"></i>
                         </div>
-                        <div>
-                            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-primary lg:h-12 lg:w-12 ">
-                                <i class="fa-solid fa-person-circle-check fa-2x"></i>
+                        <h3 class="mb-2 text-xl font-bold ">Access Control System</h3>
+                        <p class="">...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                <div class="text-sm font-light">
+                    <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">ตัวอย่างงานออกแบบผลิต PCB</h2>
+                    <p class="mb-4">เราให้บริการออกแบบและผลิตแผ่นวงจรพิมพ์ (PCB) ที่มีคุณภาพสูงตามความต้องการของลูกค้า เราใช้เทคโนโลยีที่ทันสมัยและมีความเชี่ยวชาญในการสร้าง PCB
+                        ที่ตอบโจทย์การใช้งานในทุกอุตสาหกรรม ไม่ว่าจะเป็นอุตสาหกรรมอิเล็กทรอนิกส์, ยานยนต์, การแพทย์, หรืออุตสาหกรรมการสื่อสาร</p>
+                    <div class="-space-x-6 avatar-group rtl:space-x-reverse">
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/RP2IO/1702550111797.jpg" />
                             </div>
-                            <h3 class="mb-2 text-xl font-bold ">Access Control System</h3>
-                            <p class="">...</p>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/RP2IO/1702550142030.jpg" />
+                            </div>
+                        </div>
+                        <div class="avatar">
+                            <div class="w-16">
+                                <img src="/image/RP2IO/RP2_AccessIO001.png" />
+                            </div>
+                        </div>
+                        <div class="avatar placeholder">
+                            <div class="w-16">
+                                <img src="/image/RP2IO/RP2_AccessIO002.png" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="">
-                <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                    <div class="text-sm font-light">
-                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">ตัวอย่างงานออกแบบผลิต PCB</h2>
-                        <p class="mb-4">เราให้บริการออกแบบและผลิตแผ่นวงจรพิมพ์ (PCB) ที่มีคุณภาพสูงตามความต้องการของลูกค้า เราใช้เทคโนโลยีที่ทันสมัยและมีความเชี่ยวชาญในการสร้าง PCB
-                            ที่ตอบโจทย์การใช้งานในทุกอุตสาหกรรม ไม่ว่าจะเป็นอุตสาหกรรมอิเล็กทรอนิกส์, ยานยนต์, การแพทย์, หรืออุตสาหกรรมการสื่อสาร</p>
-                        <div class="-space-x-6 avatar-group rtl:space-x-reverse">
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/RP2IO/1702550111797.jpg" />
-                                </div>
-                            </div>
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/RP2IO/1702550142030.jpg" />
-                                </div>
-                            </div>
-                            <div class="avatar">
-                                <div class="w-16">
-                                    <img src="/image/RP2IO/RP2_AccessIO001.png" />
-                                </div>
-                            </div>
-                            <div class="avatar placeholder">
-                                <div class="w-16">
-                                    <img src="/image/RP2IO/RP2_AccessIO002.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <img class="w-full rounded-lg" src="/image/RP2IO/1702550142030.jpg">
-                        <img class="w-full mt-4 rounded-lg lg:mt-10" src="/image/RP2IO/RP2_AccessIO.png">
-                    </div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <img class="w-full rounded-lg" src="/image/RP2IO/1702550142030.jpg">
+                    <img class="w-full mt-4 rounded-lg lg:mt-10" src="/image/RP2IO/RP2_AccessIO.png">
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <section class="">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="text-xl font-medium collapse-title">รับสร้างโปรแกรมเฉพาะงาน</div>
+                <div class="collapse-content">
+                    <p>
+                        ซอฟต์แวร์เฮาส์ (Software House) เป็นบริษัทหรือองค์กรที่เชี่ยวชาญในการพัฒนาซอฟต์แวร์และบริการเทคโนโลยีสารสนเทศ
+                        ซอฟต์แวร์เฮาส์ทำงานกับลูกค้าเพื่อสร้างและจัดส่งซอฟต์แวร์ที่ตรงตามความต้องการของลูกค้า
+                        ซอฟต์แวร์เฮาส์มักจะมีทีมนักพัฒนาซอฟต์แวร์ที่มีความเชี่ยวชาญในการเขียนโปรแกรมและออกแบบซอฟต์แวร์
+                        และสามารถให้คำแนะนำและบริการที่เกี่ยวข้องกับซอฟต์แวร์ต่าง ๆ รวมถึงการบริการด้านออกแบบและอิเล็กทรอนิกส์อื่น ๆ
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="text-xl font-medium collapse-title">การออกแบบและผลิต PCB พร้อมลงอุปกรณ์</div>
+                <div class="collapse-content">
+                    <p>
+                        สเปคของวงจรและอุปกรณ์ที่ใช้
+                        ขนาดและรูปทรงของ PCB
+                        ข้อกำหนดทางไฟฟ้าและอุณหภูมิ
+                        ใช้ซอฟต์แวร์ออกแบบ KiCad
+                        ออกแบบวงจรและเชื่อมต่ออุปกรณ์
+                        การออกแบบเลย์เอาต์ (PCB Layout Design):
+                        กำหนดการจัดวางอุปกรณ์บน PCB
+                        วางแผนเส้นทางการเดินสาย (Routing)
+                        ตรวจสอบการออกแบบทั้งทางไฟฟ้าและทางกายภาพ
+                        ใช้เครื่องมือการจำลอง (Simulation) เพื่อตรวจสอบการทำงานของวงจร
+                        ส่งไฟล์ Gerber และไฟล์การเจาะรู (Drill File) ไปยังโรงงานผลิต PCB
+                        เลือกประเภทของวัสดุ เช่น FR4, CEM-1, หรืออื่นๆ
+                        เตรียมและตรวจสอบอุปกรณ์
+                        ใช้เทคนิคการลงอุปกรณ์ เช่น SMD (Surface-Mount Device) หรือ THT (Through-Hole Technology)
+                        การบัดกรีและตรวจสอบความถูกต้องของการลงอุปกรณ์
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="text-xl font-medium collapse-title">การประกอบตู้ควบคุม PLC และไมโครคอนโทรลเลอร์</div>
+                <div class="collapse-content">
+                    <p>
+                        ออกแบบตู้ควบคุมและการจัดวางอุปกรณ์ภายในตู้
+                        วางแผนการเดินสายไฟและการเชื่อมต่ออุปกรณ์
+                        เลือก PLC และไมโครคอนโทรลเลอร์ที่เหมาะสม
+                        ติดตั้งอุปกรณ์ในตู้ควบคุม เช่น เบรกเกอร์, รีเลย์, สวิตช์, และจอแสดงผล
+                        ตรวจสอบการออกแบบทั้งทางไฟฟ้าและทางกายภาพ
+                        ใช้เครื่องมือการจำลอง (Simulation) เพื่อตรวจสอบการทำงานของวงจร
+                        เดินสายไฟและเชื่อมต่ออุปกรณ์ตามแผนการออกแบบ
+                        ตรวจสอบความถูกต้องของการเชื่อมต่อและความปลอดภัยของการเดินสายไฟ
+                        ทดสอบการทำงานของระบบและการเชื่อมต่อ
+                        ตรวจสอบความปลอดภัยและความทนทานของตู้ควบคุม
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="text-xl font-medium collapse-title">ระบบควบคุม IoT และควบคุมอาคาร</div>
+                <div class="collapse-content">
+                    <p>
+                        กำหนดฟังก์ชันการทำงานและอุปกรณ์ที่ต้องใช้
+                        ออกแบบโครงสร้างระบบและการเชื่อมต่ออุปกรณ์
+                        เลือกแพลตฟอร์ม IoT เช่น Arduino, Raspberry Pi, หรือ ESP8266
+                        เลือกอุปกรณ์เซนเซอร์
+                        เขียนโปรแกรมควบคุมและการสื่อสารระหว่างอุปกรณ์
+                        พัฒนาแอปพลิเคชันหรือเว็บแอปสำหรับการควบคุมและการมอนิเตอร์
+                        ติดตั้งอุปกรณ์และเชื่อมต่อกับระบบเครือข่าย
+                        ทดสอบการทำงานของระบบและปรับแต่งให้เหมาะสม
+                        ตรวจสอบและบำรุงรักษาระบบเป็นระยะ
+                        อัปเกรดซอฟต์แวร์และฮาร์ดแวร์ตามความต้องการ
+                    </p>
+                </div>
+            </div>
             <div class="flex flex-wrap justify-around gap-4">
                 <div class="p-2 border mockup-window bg-base-300 w-96">
                     <div class="flex justify-center bg-base-200">
@@ -337,111 +359,110 @@
                 </div>
 
             </div>
+        </section>
 
-            <section class="">
-                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                    <div class="max-w-screen-sm mx-auto mb-8 lg:mb-16">
-                        <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">Our team</h2>
-                        <p class="font-light sm:text-xl ">Explore the whole collection of open-source web components and elements built with the
-                            utility classes from Tailwind</p>
-                    </div>
-                    <div class="flex flex-wrap justify-around">
-                        <div class="text-center ">
-                            <img class="mx-auto mb-4 rounded-full w-36 h-36" src="/image/logo_pks.png">
-                            <h3 class="mb-1 text-2xl font-bold tracking-tight ">
-                                <a href="#">PKS</a>
-                            </h3>
-                            <p>Co-founder</p>
-                            <ul class="flex justify-center mt-4 space-x-4">
-                                <li>
-                                    <a href="#" class="text-[#39569c] ">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-[#00acee] ">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path
-                                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class=" dark:text-gray-300">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-[#ea4c89] ">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="text-center ">
-                            <img class="mx-auto mb-4 rounded-full w-36 h-36" src="/image/14702412_1160024867415458_7803233328317038694_n.jpg">
-
-                            <h3 class="mb-1 text-2xl font-bold tracking-tight ">
-                                <a href="#">Bunput Numnak</a>
-                            </h3>
-                            <p>Developer/Co-founder</p>
-                            <ul class="flex justify-center mt-4 space-x-4">
-                                <li>
-                                    <a href="#" class="text-[#39569c] ">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-[#00acee] ">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path
-                                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class=" dark:text-gray-300">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-[#ea4c89] ">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
+        <section class="">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                <div class="max-w-screen-sm mx-auto mb-8 lg:mb-16">
+                    <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">Our team</h2>
+                    <p class="font-light sm:text-xl ">Explore the whole collection of open-source web components and elements built with the
+                        utility classes from Tailwind</p>
                 </div>
-            </section>
-        </div>
+                <div class="flex flex-wrap justify-around">
+                    <div class="text-center ">
+                        <img class="mx-auto mb-4 rounded-full w-36 h-36" src="/image/logo_pks.png">
+                        <h3 class="mb-1 text-2xl font-bold tracking-tight ">
+                            <a href="#">PKS</a>
+                        </h3>
+                        <p>Co-founder</p>
+                        <ul class="flex justify-center mt-4 space-x-4">
+                            <li>
+                                <a href="#" class="text-[#39569c] ">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#00acee] ">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class=" dark:text-gray-300">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#ea4c89] ">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center ">
+                        <img class="mx-auto mb-4 rounded-full w-36 h-36" src="/image/14702412_1160024867415458_7803233328317038694_n.jpg">
 
+                        <h3 class="mb-1 text-2xl font-bold tracking-tight ">
+                            <a href="#">Bunput Numnak</a>
+                        </h3>
+                        <p>Developer/Co-founder</p>
+                        <ul class="flex justify-center mt-4 space-x-4">
+                            <li>
+                                <a href="#" class="text-[#39569c] ">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#00acee] ">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class=" dark:text-gray-300">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#ea4c89] ">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer class="p-10 footer bg-base-200 text-base-content">
@@ -495,6 +516,15 @@
     </dialog>
 
 
+    <script>
+        const debug = console.log;
+        window.onload = function () {
+            let container = document.getElementById('view_items_section');
+            let content = container.firstElementChild;
+            let scrollPosition = (content.scrollWidth - container.clientWidth) / 2;
+            container.scrollLeft = scrollPosition;
+        };
+    </script>
 </body>
 
 </html>

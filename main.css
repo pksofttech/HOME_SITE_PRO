@@ -100,7 +100,7 @@ body {
 }
 
 .content_box {
-    @apply p-2 min-h-96 w-full bg-base-300 rounded-box flex flex-col gap-2;
+    @apply p-8 min-h-96 w-full bg-base-300 rounded-box flex flex-col gap-2;
 }
 
 .app-card-001 {
