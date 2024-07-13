@@ -217,7 +217,7 @@
             </div>
         </section>
 
-        <section id="section_image_view" class="">
+        <section class="add_preview_image">
             <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div class="text-sm font-light">
                     <h2 class="mb-4 text-4xl font-extrabold tracking-tight ">ตัวอย่างงานออกแบบผลิต PCB</h2>
@@ -416,7 +416,7 @@
             </div>
         </section>
 
-        <section class="">
+        <section class="add_preview_image">
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
                 <div class="text-xl font-medium collapse-title">รับสร้างโปรแกรมเฉพาะงาน</div>
@@ -742,26 +742,15 @@
     </script>
 
     <script>
-        function getParentDivClass(image) {
-            // Get the parent div of the image
-            const parentDiv = image.closest('div');
-            // Return the class name(s) of the parent div
-            return parentDiv.className;
-        }
-        //const container = document.querySelector('#section_image_view');
-        //const images = container.querySelectorAll('img');
-        const images = document.querySelectorAll('img');
-
-        images.forEach(image => {
-            //const parentDivClass = getParentDivClass(image);
-            //if (parentDivClass == "w-16") {
-            //    console.log('Parent Div Class:', parentDivClass);
-            //}
-            image.addEventListener('click', () => {
-                document.getElementById("preview_image_view").src = image.src;
-                preview_image.showModal();
+        const containers = document.querySelectorAll('.add_preview_image');
+        containers.forEach(container => {
+            const images = container.querySelectorAll('img');
+            images.forEach(image => {
+                image.addEventListener('click', () => {
+                    document.getElementById("preview_image_view").src = image.src;
+                    preview_image.showModal();
+                });
             });
-
         });
 
     </script>
