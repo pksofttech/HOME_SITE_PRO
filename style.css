@@ -1941,6 +1941,13 @@ html {
   flex-grow: 1;
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 .card figure {
   display: flex;
   align-items: center;
@@ -2765,6 +2772,10 @@ html {
     border-color: var(--btn-color, var(--fallback-b2));
   }
 
+  .btn-primary {
+    --btn-color: var(--fallback-p);
+  }
+
   .btn-success {
     --btn-color: var(--fallback-su);
   }
@@ -2817,7 +2828,17 @@ html {
   outline-offset: 2px;
 }
 
+.btn-primary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+  outline-color: var(--fallback-p,oklch(var(--p)/1));
+}
+
 @supports (color: oklch(0% 0 0)) {
+  .btn-primary {
+    --btn-color: var(--p);
+  }
+
   .btn-success {
     --btn-color: var(--su);
   }
@@ -3683,6 +3704,38 @@ details.collapse summary::-webkit-details-marker {
   padding: 0px;
 }
 
+.card-side {
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.card-side :where(figure:first-child) {
+  overflow: hidden;
+  border-start-start-radius: inherit;
+  border-start-end-radius: unset;
+  border-end-start-radius: inherit;
+  border-end-end-radius: unset;
+}
+
+.card-side :where(figure:last-child) {
+  overflow: hidden;
+  border-start-start-radius: unset;
+  border-start-end-radius: inherit;
+  border-end-start-radius: unset;
+  border-end-end-radius: inherit;
+}
+
+.card-side figure > * {
+  max-width: unset;
+}
+
+:where(.card-side figure > *) {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .kbd-sm {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -3905,6 +3958,10 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -3915,18 +3972,6 @@ details.collapse summary::-webkit-details-marker {
 
 .h-6 {
   height: 1.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .min-h-screen {
@@ -4031,6 +4076,10 @@ details.collapse summary::-webkit-details-marker {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -4294,6 +4343,12 @@ details.collapse summary::-webkit-details-marker {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
