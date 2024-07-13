@@ -23,32 +23,38 @@
 
 <body class="bg-base-100">
     <!-- NAV BAR -->
-    <div class="sticky top-0 z-50 overflow-x-scroll font-bold text-gray-200 navbar bg-primary ">
-        <div class="navbar-start">
+    <div class="sticky top-0 z-50 overflow-x-scroll font-bold text-gray-200 navbar bg-primary">
+        <div class="flex-1">
             <div class="flex items-center justify-start gap-2 text-sm ps-4">
                 <div class="avatar">
-                    <div class="w-10 mask mask-squircle">
+                    <div class="h-8 mask mask-squircle">
                         <img src="/image/logo_pks.png" />
                     </div>
                 </div>
                 <div class="hidden px-4 text-lg font-bold sm:block">
-                    PKSOFTTECH.ORG[sat 13 jul 08:20]
+                    PKSOFTTECH.ORG
                 </div>
                 <p class="text-lg"><i class="fa-solid fa-square-phone"></i> 081-1434939</p>
-                <!-- <p> <i class="fa-brands fa-line"></i></i> PKSOFTTTECH</p> -->
-                <a href="https://www.facebook.com/pk.softtech" target="_blank" class="">
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                </a>
-                <button onclick="line_add_dialog.showModal()" class="">
-                    <i class="fa-brands fa-line fa-2x"></i>
-                </button>
-                <a href="https://www.youtube.com/channel/UC8QUzWR86e1i5E9wJhyxa6A" target="_blank" class="">
-                    <i class="fa-brands fa-youtube fa-2x"></i>
-                </a>
-                <a href="https://github.com/pksofttech" target="_blank" class="">
-                    <i class="fa-brands fa-github fa-2x"></i>
-                </a>
+
             </div>
+        </div>
+        <div class="flex-grow gap-2">
+            <!-- <p> <i class="fa-brands fa-line"></i></i> PKSOFTTTECH</p> -->
+            <a href="https://www.facebook.com/pk.softtech" target="_blank" class="">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <button onclick="line_add_dialog.showModal()" class="">
+                <i class="fa-brands fa-line fa-2x"></i>
+            </button>
+            <a href="https://www.youtube.com/channel/UC8QUzWR86e1i5E9wJhyxa6A" target="_blank" class="">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://github.com/pksofttech" target="_blank" class="">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </div>
+        <div class="flex-none hidden md:block">
+            <div class="badge badge-accent badge-xs">v 0.0.01</div>
         </div>
     </div>
     <div class="hero rounded-b-btn" style="background-image: url(/image/background.jpg);">
