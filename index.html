@@ -147,7 +147,8 @@
                 </div>
                 <div class="app-card-001">
                     <div class="mask mask-squircle">
-                        <video width="300" controls autoplay>
+                        <!-- <video width="300" controls autoplay> -->
+                        <video width="300" controls>
                             <source src="/video/PKSOFTTECH.ORG.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -808,17 +809,24 @@
 
     </dialog>
 
-    <dialog id="preview_image" class="modal">
-        <div class="p-4">
-            <form method="dialog">
-                <button class="absolute btn btn-lg btn-circle btn-error left-1/2 top-1/2 ring-2 "><i class="fa-solid fa-xmark fa-2x"></i></button>
-            </form>
+    <!-- <dialog id="preview_image" class="modal">
+        <form method="dialog" class="modal-backdrop">
+            <button class="absolute btn btn-lg btn-circle btn-error left-1/2 top-1/2 ring-2 "><i class="fa-solid fa-xmark fa-2x"></i></button>
+        </form>
+        <div class="modal-box">
             <figure class="p-4 "><img id="preview_image_view" class="" src="/image/75821.jpg" alt="PKSOFTTECH" /></figure>
-
         </div>
+    </dialog> -->
 
+    <dialog id="preview_image" class="modal">
+        <div class="w-11/12 max-w-5xl bg-transparent modal-box">
+            <figure><img id="preview_image_view" class="mx-auto" src="/image/75821.jpg" alt="PKSOFTTECH" /></figure>
+            <button class="absolute btn btn-lg btn-circle btn-error left-1/2 top-1/2 ring-2 " onclick="preview_image.close();"><i class="fa-solid fa-xmark fa-2x"></i></button>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
     </dialog>
-
 
     <script>
         const debug = console.log;
